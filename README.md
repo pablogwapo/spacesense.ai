@@ -13,3 +13,5 @@ Before delving into the changes to enhance performance, I want to share two usef
 Improvements of the current model:
 
 * To enhance the model's performance, I would increase the number of convolutional blocks from 2 to 6. While running a Gridsearch for hyper-parameter tuning would be the best approach, it could be computationally expensive. For kernel and pool size, smaller architectures have been show to generally performance better and retain more information. Additionally, I would decrease the stride from 5 to 1 to achieve the highest quality possible (the number of steps the sliding window takes). Experimenting with other activation functions like elu, selu, etc. and increasing the number of layers and neurons in the classifier while adding dropout to combat overfitting would also be beneficial. However, it's crucial to keep the output layer to 10 neurons, one per class, to avoid errors.
+
+Lastly, I would explore transfer learning, as mentioned in the notebook Part 1.ipynb
